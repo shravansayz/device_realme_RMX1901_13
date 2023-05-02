@@ -9,16 +9,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 
-# Inherit some common Octavi stuff.
-$(call inherit-product, vendor/octavi/config/common_full_phone.mk)
+# Inherit some common Project-Elixir stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_WITH_GAPPS := true
 BUILD_TARGET_WANTS_FOD_ANIMATIONS := true
 TARGET_USES_BLUR := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-OCTAVI_BUILD_TYPE := UNOFFICIAL
-OCTAVI_MAINTAINER := SHRAVAN
+ELIXIR_BUILD_TYPE := UNOFFICIAL
+ELIXIR_MAINTAINER := SHRAVAN
 EXTRA_UDFPS_ANIMATIONS := true
 TARGET_HAS_UDFPS := true
 
@@ -29,7 +29,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := Realme
 PRODUCT_DEVICE := RMX1901
 PRODUCT_MANUFACTURER := Realme
-PRODUCT_NAME := octavi_RMX1901
+PRODUCT_NAME := aosp_RMX1901
 PRODUCT_MODEL := Realme X
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
