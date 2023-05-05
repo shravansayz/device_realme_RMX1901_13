@@ -11,7 +11,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/superior/config/common.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
+<<<<<<< HEAD:superior_RMX1901.mk
 BUILD_WITH_GAPPS := true
+=======
+WITH_GAPPS := true
+>>>>>>> c2ea14272a0fabffac79d3227fce37a01de80f64:octavi_RMX1901.mk
 BUILD_TARGET_WANTS_FOD_ANIMATIONS := true
 TARGET_USES_BLUR := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
@@ -31,7 +35,11 @@ PRODUCT_MODEL := Realme X
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
+<<<<<<< HEAD:superior_RMX1901.mk
     PRIVATE_BUILD_DESC="cheetah-user 13 TQ2A.230405.002 9891397 release-keys" \ 
+=======
+    PRIVATE_BUILD_DESC="cheetah-user 13 TQ2A.230505.002 9891397 release-keys" \ 
+>>>>>>> c2ea14272a0fabffac79d3227fce37a01de80f64:octavi_RMX1901.mk
     PRODUCT_NAME=RMX1901
     
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
