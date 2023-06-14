@@ -12,8 +12,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/spark/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
-OCTAVI_BUILD_TYPE := UNOFFICIAL
-OCTAVI_BUILDTYPE_VARIANT := GAPPS
+SPARK_BUILD_TYPE := UNOFFICIAL
+WITH_GAPPS := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
 EXTRA_UDFPS_ANIMATIONS := true
