@@ -139,6 +139,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.qti.inputopts.enable=true \
     persist.vendor.qti.inputopts.movetouchslop=0.6 \
     ro.qcom.adreno.qgl.ShaderStorageImageExtendedFormats=0
+    
 
 # FS-verity
 PRODUCT_PROPERTY_OVERRIDES += \
