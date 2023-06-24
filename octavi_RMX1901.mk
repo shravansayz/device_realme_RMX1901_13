@@ -13,14 +13,14 @@ $(call inherit-product, vendor/octavi/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 OCTAVI_BUILD_TYPE := UNOFFICIAL
-OCTAVI_BUILDTYPE_VARIANT := GAPPS
+WITH_GAPPS := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
 EXTRA_UDFPS_ANIMATIONS := true
 TARGET_HAS_UDFPS := true
 TARGET_ENABLE_BLUR := true
 TARGET_EXCLUDES_AUDIOFX := true
-OCTAVI_MAINTAINER := SHRAVAN
+OCTAVI_MAINTAINER := Shravansayzz
 
 # Inherit from RMX1901 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
