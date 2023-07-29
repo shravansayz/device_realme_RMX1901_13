@@ -62,11 +62,14 @@ vendor/lib64/rfsa/adsp/libBeautyShot_skel.so
 vendor/lib64/rfsa/adsp/libdsp_streamer_add_constant.so
 vendor/lib64/rfsa/adsp/libdsp_streamer_skel.so
 
-# ANT+
+# ANT+ (system) - from LA.QSSI.13.0.r1-09700-qssi.0
 -lib/libantradio.so
 -lib64/libantradio.so
-product/lib/com.qualcomm.qti.ant@1.0.so
-product/lib64/com.qualcomm.qti.ant@1.0.so
+system_ext/lib/com.qualcomm.qti.ant@1.0.so|ef2c19734749bee9662a6f6e1cd924387c5bbb9c
+system_ext/lib64/com.qualcomm.qti.ant@1.0.so|2bdd0b1538f514f237c2ed3915d755cdbd5e2743
+
+
+# ANT+ (vendor)
 vendor/lib/com.qualcomm.qti.ant@1.0.so
 vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so
 vendor/lib64/com.qualcomm.qti.ant@1.0.so
@@ -101,9 +104,11 @@ vendor/lib/hw/audio.primary.sdm710.so
 vendor/lib/libaudioEngineerTest.so
 vendor/lib/libaudio_log_utils.so
 
-# Audio FX modules
-etc/permissions/audiosphere.xml
-framework/audiosphere.jar
+# Audio FX modules (system) - from LA.QSSI.13.0.r1-09700-qssi.0
+system_ext/etc/permissions/audiosphere.xml|015ad7be4921039238bfa3d34d052d752453e49c
+system_ext/framework/audiosphere.jar|3c42dff6da0571acd9ea466983c7f6354d588bb3
+
+# Audio FX Modules (vendor)
 vendor/lib64/soundfx/libasphere.so
 vendor/lib64/soundfx/libqcbassboost.so
 vendor/lib64/soundfx/libqcreverb.so
@@ -570,9 +575,9 @@ vendor/etc/OPPO_OLED_AD_calib.cfg
 vendor/firmware/dpAP_full.mbn
 vendor/firmware/dpAP_mini.mbn
 
-# DPM (system) - from LA.QSSI.13.0.r1-05800-qssi.0
+# DPM (system) - from LA.QSSI.13.0.r1-09700-qssi.0
 framework/tcmclient.jar|0402c82a800b58a2e93fd7cb8e81a24e674ebc35
-system_ext/bin/dpmd|606bf68351189bb5cdbdf86630c018a209862e03
+system_ext/bin/dpmd|d098df72c60697de359a80d6377689d98fb11221
 system_ext/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
 system_ext/etc/init/dpmd.rc|738b638ff04cda368e22c03e16baf90ba157a6fc
 system_ext/etc/permissions/com.qti.dpmframework.xml|c4b7ad0879d00c1eba4f3fe3a88ddb8aa153629a
@@ -1226,10 +1231,11 @@ vendor/lib64/vendor.qti.hardware.alarm@1.0.so|c7c418cfc889a89ea4f21bf828f626c75a
 vendor/bin/hw/android.hardware.health@2.1-service|977491e82ca92e267e88f4f8ed655dad0c9fbd83
 vendor/etc/init/android.hardware.health@2.1-service.rc|07814dfd61ba11205f1ad730828a9d8d3b7df509
 
-# QMI - from LA.QSSI.12.0.r1-05800.02-qssi.0
-etc/permissions/qti_libpermissions.xml|593bcb72cce68ceb0a70f50bcae7d460114e7c62
-etc/permissions/qti_permissions.xml|e6ff4572352b1a4f91b6b9d7cbb1cad9924410a0
+# QMI (system) - from LA.QSSI.13.0.r1-09700-qssi.0
+system_ext/etc/permissions/qti_libpermissions.xml|593bcb72cce68ceb0a70f50bcae7d460114e7c62
+system_ext/etc/permissions/qti_permissions.xml|e6ff4572352b1a4f91b6b9d7cbb1cad9924410a0
 
+# QMI (vendor)
 vendor/bin/irsc_util
 vendor/etc/sec_config
 vendor/lib64/libdiag.so
@@ -1265,16 +1271,16 @@ vendor/lib/libqmi_csi.so
 vendor/lib/libqmi_encdec.so
 vendor/lib/libqmiservices.so
 
-# RIL - from LA.QSSI.12.0.r1-05800.02-qssi.0
--system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|c8a2ce9a86e542daf835dc0bfa1a63ed7e412d84
+# RIL (system) - from LA.QSSI.13.0.r1-09700-qssi.0
+-system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|38701f94dca753199cbff47b338a71851a3280bf
 system_ext/etc/permissions/qcrilhook.xml|30397e293b2c40e6b7a1d11c2a615cdd05de625a
-system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml|4f0056403f56928b8c75a617ba582f17061f89ae
-system_ext/framework/qcrilhook.jar|f251fd8cf621c66a970597954c257d69b6136eda
-system_ext/framework/qti-telephony-common.jar|fee3a1ee6888cd849ad7b7294e7c50c26ef80ac1
--system_ext/priv-app/ims/ims.apk|34e0485aea9b680756aa88794b18f8dca024fb33
--system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|47ff9a1712950fc9f877691f2712d8aa7fcf3420
+system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml|a7e114ea1e6909685ce49717a2b5b66d8275d419
+system_ext/framework/qcrilhook.jar|8d44048c04f4d38a6bf6a279e3bceface10c0dde
+system_ext/framework/qti-telephony-common.jar|8d94e50a8dc3e796e3a4c78cefdf6903bf1a524e
+-system_ext/priv-app/ims/ims.apk|5690534155879d101cbe323456b01f29cb97b8b4
+-system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|e3cf3ab60bf632270eccc4e99ead89254d3d84ab
 
-# RIL
+# RIL (vendor)
 -vendor/app/IWlanService/IWlanService.apk
 vendor/bin/hw/qcrild
 vendor/bin/adpl
