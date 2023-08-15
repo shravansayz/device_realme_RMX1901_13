@@ -129,6 +129,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true
 
+# FS-verity
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.apk_verity.mode=2
+
 # Fling
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.min.fling_velocity=160 \
@@ -162,6 +166,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.protected_contents=true
     debug.sf.auto_latch_unsignaled=true
     debug.sf.enable_gl_backpressure=1
+
+#Phantom process monitoring
+sys.fflag.override.settings_enable_monitor_phantom_procs=false
 
 # IMS
 PRODUCT_PROPERTY_OVERRIDES += \
