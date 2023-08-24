@@ -1263,4 +1263,6 @@
 
    <!-- Default value for performant auth feature. -->
     <bool name="config_performantAuthDefault">true</bool>
+    
+    </resources>
 
